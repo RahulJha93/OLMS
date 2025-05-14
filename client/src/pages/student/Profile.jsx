@@ -52,7 +52,7 @@ const Profile = () => {
 
   useEffect(() => {
     refetch();
-  }, []);
+  }, [error, updateUserData, isSuccess, isError]);
 
   useEffect(() => {
     if (isSuccess) {
